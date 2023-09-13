@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0px;
+
+}
+body,html{
+    display:grid;
+    min-height:100%;
+    background-color: cornflowerblue;
+    
+}
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#card{
+    width:300px;
+    height:400px;
+background-color: #fff;
+border-radius: 10px;
+box-sizing: content-box;
+box-shadow: 10px 10px 15px;
+text-align: center;
+overflow:hidden;
+}
+
+#card img{
+    width: 98%;
+    height: 55%;
+    margin: 0%;
+    padding: 0%;
+    object-fit: cover;
+    object-position: center;
+    padding: 3px 3px;
+    border-radius: 15px;
+}
+#card h1{
+    font-weight: 900;
+    font-size: 2rem;
+    margin:10px;
+    padding:10px;
+
+}
+#card h4{
+color:#111;
+font-size:25px;
+font-weight: 300;
+
+}
+#card button{
+ margin: 20px;
+ padding:10px;
+ background-color:cadetblue;
+border:none;
+border-radius:10px;
+box-shadow: 5px 5px 5px rgb(228, 207, 207);
+cursor:pointer;
+}
+
+#card #remove{
+    background-color: #dadada;
+
+    
+}
+#card #remove:hover{
+  
+    transform-style: scale(2.5);
+    color: rgb(106, 160, 142);
+    font-weight:500;
+  transform: scale(1.1); /* Increase size by 10% on hover */
+    transition: transform 0.3s ease; 
+}
+#card #add:hover{
+  
+    transform-style: scale(2.5);
+  transform: scale(1.1); /* Increase size by 10% on hover */
+  font-weight: 500;
+    transition: transform 0.3s ease; 
+}
+
+#card i{
+
+position:absolute;
+top: 20%;
+left:50%;
+    color:#f2e7e7;
+    font-size:70px;
+    opacity: 0.7;
+  transform:translate(-50%,-50%) scale(0);
+  transition: transform 0.3s ease; 
+}
